@@ -1,0 +1,18 @@
+class LtoD {
+	public static void main(String args[]) {
+		long L;
+		double D;
+		int i = 9;
+		char ch;
+		
+		
+		L = 12430697;
+		D = L;
+		
+		ch = i;
+		
+		System.out.println("i è ch: " + i + " " + ch);
+		System.out.println("L è D: " + L + " " + D);
+	}
+
+}

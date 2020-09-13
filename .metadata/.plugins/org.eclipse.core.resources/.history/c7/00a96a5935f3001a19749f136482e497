@@ -1,0 +1,9 @@
+
+class Construct {
+	int x;
+	
+	Construct(int i) {
+		x = i;
+	}
+
+}

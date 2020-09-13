@@ -1,0 +1,17 @@
+
+class Construct {
+	int x;
+	
+	Construct(int i) {
+		x = i;
+	}
+}
+
+class ParmConsDemo {
+	public static void main(String args[]) {
+		Construct t1 = new Construct(100);
+		Construct t2 = new Construct(10);
+		
+		System.out.println(t1.x + t2.x)
+	}
+}

@@ -1,0 +1,9 @@
+class Pwr {
+	double b;
+	int e;
+	double val;
+}
+
+public class DemoPwr {
+
+}

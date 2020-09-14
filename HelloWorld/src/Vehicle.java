@@ -1,34 +1,42 @@
 class Vehicle {
-	int passengers;
-	int fuelcap;
-	int mpg;
+	int passengers = 7;
+	int fuelcap = 16;
+	int mpg = 21;
+    
+	Vehicle() {
+		//перегрузка конструктора для сохранения значений по умолчанию
+	}
+	
+	Vehicle(int p, int f, int m) {
+		passengers = p;
+		fuelcap = f;
+		mpg = m;
+	}
 	
 	int range() {
 		return mpg * fuelcap;
+	}
+	
+	double fuelneeded(int miles) {
+		return (double) miles / mpg;
 	}
 }
 
 class RetMeth {
 	public static void main(String args[]) {
-		//Vehicle minivan; объявление ссылки на объект
-		//minivan = new Vehicle(); выделение памяти для объекта типа Vehicle
+		// Vehicle minivan; объявление ссылки на объект
+		// minivan = new Vehicle(); выделение памяти для объекта типа Vehicle
 		Vehicle minivan = new Vehicle();
-		Vehicle sportcar = new Vehicle();
-		
-		minivan.passengers = 7;
-		minivan.fuelcap = 16;
-		minivan.mpg = 21;
-		
-		sportcar.passengers = 2;
-		sportcar.fuelcap = 14;
-		sportcar.mpg = 12;
-		
+		Vehicle sportcar = new Vehicle(2, 14, 12);
+
 		System.out.println("Мини-фургон может перевезти " + minivan.passengers + 
-				" пассажиров на расстояние " + minivan.range() + " миль");
-		
+				" пассажиров на расстояние "
+				+ minivan.range() + " миль");
+
 		System.out.println("Спорткар может перевезти " + sportcar.passengers + 
-				" пассажиров на расстояние " + sportcar.range() + " миль");
-		
+				" пассажиров на расстояние "
+				+ sportcar.range() + " миль");
+
 	}
 
 }

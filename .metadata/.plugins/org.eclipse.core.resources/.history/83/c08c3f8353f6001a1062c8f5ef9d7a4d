@@ -1,0 +1,13 @@
+package Chapter_5;
+
+class Overload {
+	void ovlDemo() {
+		System.out.priuntln("без параметров");
+	}
+}
+
+public class OverloadDemo {
+	public static void main(String args[]) {
+		
+	}
+}

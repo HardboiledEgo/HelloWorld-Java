@@ -1,0 +1,15 @@
+package Chapter_5;
+
+class Queue {
+	char q[];
+	int putloc, getloc;
+}
+
+Queue(int size) {
+	q = new char[size];
+	putloc = getloc = 0;
+}
+
+public class QDemo {
+
+}

@@ -1,0 +1,8 @@
+package Chapter_5;
+
+class MinMax {
+	public static void main(String args[]) {
+		
+	}
+
+}

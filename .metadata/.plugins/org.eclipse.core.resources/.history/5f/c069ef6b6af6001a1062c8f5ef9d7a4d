@@ -1,0 +1,11 @@
+package Chapter_5;
+
+class Bubble {
+	public static void main(String args[]) {
+		int arr[] = {2, 5, 65, 23, 47, -12, -35, -72, -14, 0};
+		int min, max = arr[0];
+		
+		for (int i = 1; i < arr.length; i++) 
+	}
+
+}
